@@ -1,0 +1,178 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="UserMaster.master.cs" Inherits="User_UserMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+     <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+  <meta content="" name="description"/>
+  <meta content="" name="keywords"/>
+
+  <!-- Favicons -->
+  <link href="../index/assets/img/favicon.png" rel="icon"/>
+  <link href="../index/assets/img/apple-touch-icon.png" rel="apple-touch-icon"/>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
+
+  <!-- Vendor CSS Files -->
+  <link href="../index/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../index/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"/>
+  <link href="../index/assets/vendor/aos/aos.css" rel="stylesheet"/>
+  <link href="../index/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"/>
+  <link href="../index/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"/>
+
+  <!-- Main CSS File -->
+  <link href="../index/assets/css/main.css" rel="stylesheet"/>
+
+  <!-- =======================================================
+  * Template Name: Append
+  * Template URL: https://bootstrapmade.com/append-bootstrap-website-template/
+  * Updated: May 10 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+   <header id="header" class="header d-flex align-items-center sticky-top" style=""color:black>
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Online Sales</h1><span>.</span>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="../Index/index.html">Home</a></li>
+           <li class="dropdown"><a href="#"><span>Settings</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="MyProfile.aspx">MyProfile</a></li>
+               <li><a href="EditProfile.aspx">EditProfile</a></li>
+               <li><a href="ChangePassword.aspx">ChangePassword</a></li>
+            </ul>
+          </li>
+        
+
+             <li class="dropdown"><a href="#"><span>Cart</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="AddtoCart.aspx">AddToCart</a></li>
+              <li><a href="ViewCartDetails.aspx">ViewCartDetails</a></li>
+                <li><a href="PaymentOrder.aspx">PaymentOrder</a></li>
+                 <li><a href="ViewDeliveryStatus.aspx">DeliveryStatus</a></li>
+                 <li class="dropdown"><a href="#"><span>Offer</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li class="dropdown"><a href="#"><span>OfferCart</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="ViewOfferDetails.aspx">OfferAddtoCart</a></li>
+                  <li><a href="ViewOfferCartDetails.aspx">OfferCartDetails</a></li>
+                  <li><a href="OfferPaymentOrder.aspx">PaymentOrder</a></li>
+                  <li><a href="ViewOfferDeliveryStatus.aspx">DeliveryStatus</a></li>
+                
+                </ul>
+              </li>
+            </ul>
+          </li>
+                </ul>
+          </li>
+
+             <li class="dropdown"><a href="#"><span>Report</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="PostComplaint.aspx">Complaint</a></li>
+              <li><a href="PostFeedback.aspx">Feedback</a></li>
+                <li><a href="ViewComplaintReplay.aspx">ViewComplaintReplay</a></li>
+            </ul>
+          </li>
+
+            
+                <li class="dropdown"><a href="#"><span>View</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <%--<li><a href="ViewUserList.aspx">ViewUserList</a></li>--%>
+              <li><a href="ViewNewsUpload.aspx">ViewNewsUpload</a></li>
+                <li><a href="ViewPlayer.aspx">ViewPlayer</a></li>
+              <%-- <li><a href="ViewProductDetails.aspx">ViewPlayer</a></li>--%>
+            </ul>
+          </li>
+                
+                <li class="dropdown"><a href="#"><span>WishList</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="ViewProductDetails.aspx">WishlistProducts</a></li>
+              <li><a href="ViewWishList.aspx">ViewWishList</a></li>
+               
+            </ul>
+          </li>
+                <li class="dropdown"><a href="#"><span>Chat</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="Chat.aspx">Chat</a></li>
+             
+            </ul>
+          </li>
+
+                <li class="dropdown"><a href="#"><span>Email</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="EmailSend.aspx">SendEmail</a></li>
+             
+            </ul>
+          </li>
+            </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="../Geust/Login.aspx">LogOut</a>
+
+    </div>
+  </header>
+
+  <main class="main" style="height:auto">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </main>
+
+  <footer id="footer" class="footer position-relative" style=""color:black>
+
+   
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="sitename">Online Sales</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">Amritha Pradeep</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="../index/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../index/assets/vendor/php-email-form/validate.js"></script>
+  <script src="../index/assets/vendor/aos/aos.js"></script>
+  <script src="../index/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../index/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../index/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="../index/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../index/assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="../index/assets/js/main.js"></script>
+    </form>
+</body>
+</html>
